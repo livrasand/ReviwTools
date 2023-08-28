@@ -9,17 +9,16 @@ class ReviwToolsTestDefaultFileCommand(sublime_plugin.TextCommand):
 
         try:
             data_list = json.loads(content)
-            sorted_data = sorted(data_list, key=lambda x: x['name'].lower())
+            sorted_data = sorted(data_list, key=lambda x: x['title'].lower())
             sorted_content = json.dumps(sorted_data, indent=4, ensure_ascii=False)
             self.view.replace(edit, region, sorted_content)
 
-            # Obtener el nombre de cada bloque y su posición
+            # Obtener el título de cada bloque y su posición
             block_positions = [
-                "{} está en la posición {}".format(block['name'], i + 1)
+                "{} está en la posición {}".format(block['title'], i + 1)
                 for i, block in enumerate(sorted_data)
             ]
             
-            # Mostrar mensajes de posición en un panel lateral personalizado
             self.show_custom_panel("\n".join(block_positions))
         except Exception as e:
             error_message = "Error sorting JSON: " + str(e)
