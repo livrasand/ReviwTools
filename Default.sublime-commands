@@ -2,9 +2,5 @@
     {
         "caption": "ReviwTools: Test Default File",
         "command": "reviw_tools_test_default_file"
-    },
-    {
-        "caption": "ReviwTools: Check URL Validity",
-        "command": "verify_download_url"
     }
 ]

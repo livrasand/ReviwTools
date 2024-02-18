@@ -1,6 +1,6 @@
 # ReviwTools para Sublime Text
 
-Este es un complemento para Sublime Text que permite ordenar los bloques JSON por nombre y mostrar sus posiciones en <a href="https://livrasand.github.io/jwpub-catalog.html">JWPUB Catalog</a>.
+Este es un complemento para Sublime Text que permite ordenar los bloques JSON por nombre y mostrar sus posiciones en <a href="https://livrasand.github.io/jwpub-catalog.html">livrasand.github.io</a>.
 
 La funcionalidad incluye:
 
